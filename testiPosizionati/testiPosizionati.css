@@ -1,0 +1,34 @@
+body{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+h1:hover{
+    text-shadow: 2px 2px 5px red;
+}
+.sposta{
+    margin-top: 3em;
+}
+h2~ h2:hover + p{
+    color: pink;
+}
+.sposta:hover{
+    margin-left: 4em;
+}
+.centro{
+    text-align: center;
+}
+.giospo{
+    margin-top: 0em;
+    clear: both;
+    float: left;
+    background-color: lightblue;
+    font-size: 90%;
+    padding: 1em;
+    width: 10em;
+    margin-right: 1em;
+}
+h2{
+    clear: both;
+}

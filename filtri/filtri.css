@@ -1,0 +1,12 @@
+img{
+    height: 500px;
+}
+#foto1:hover{
+    filter: grayscale(100%);
+}
+#foto2:hover{
+    filter: blur(5px);
+}
+#foto3:hover{
+    filter: grayscale(100%);
+}

@@ -1,0 +1,53 @@
+body{
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    margin: 0em;
+    grid-template-areas:
+        "header header header"
+        "sinistra nav destra"
+        "sinistra article destra"
+        "footer footer footer";
+}
+header {
+    grid-area: header;
+    text-align: center;
+    border-bottom: solid blue;
+    padding: 1em;
+}
+
+nav {
+    background-color: blue;
+    grid-area: nav;
+    padding: 1em;
+}
+nav a{
+    color: white;
+    padding: 1em;
+}
+
+#sinistra {
+    grid-area: sinistra;
+    padding: 1em;
+}
+#destra{
+    grid-area: destra;
+    padding: 1em;
+}
+
+article {
+    background-color: white;
+    grid-area: article;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    padding: 1em;
+}
+footer a{
+    color: yellow;
+}

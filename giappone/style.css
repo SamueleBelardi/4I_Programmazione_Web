@@ -1,0 +1,46 @@
+body {
+    margin: 0em;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+}
+
+nav {
+    background-color: red;
+    padding: 1em;
+}
+
+nav a {
+    display: inline;
+    margin-left: 2em;
+    margin-right: 3em;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    grid-template-areas: 
+        "article aside";
+}
+
+article {
+    margin-top: 2em;
+    grid-area: article;
+}
+
+h2 {
+    border-bottom: 1px solid grey;
+    margin-right: 2em;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightgray;
+    padding: 1em;
+}
+

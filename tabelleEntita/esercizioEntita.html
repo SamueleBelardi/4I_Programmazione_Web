@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelle e Entita</title>
+</head>
+
+<body>
+    <p>usare "find & replace in selection"... speriamo il vostro editor lo permetta</p>
+    <table border=1>
+        <tr>
+            <th>tag</th>
+            <th colspan="3">lista risultante</th>
+        </tr>
+        <tr>
+            <td>ul</td>
+            <td>elenco non ordinato</td>
+            <td>
+                <p>&lt;ul&gt;<br>
+                    &nbsp;&lt;li&gt;uno&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;due&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;tre&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </p>
+            </td>
+            <td>
+                <ul>
+                    <li>uno</li>
+                    <li>due</li>
+                    <li>tre</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>ol</td>
+            <td>elenco ordinato</td>
+            <td>
+                <p>&lt;ol&gt;<br>
+                    &nbsp;&lt;li&gt;uno&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;due&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;tre&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </p>
+            </td>
+            <td>
+                <ol>
+                    <li>uno</li>
+                    <li>due</li>
+                    <li>tre</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>dl</td>     
+            <td>elenco di definizioni</td>
+            <td><p>&lt;dl&gt;<br>
+                &nbsp;&lt;dt&gt;uno&lt;dt&gt;<br>
+                &nbsp;&lt;dd&gt;il primo numero naturale&lt;/dd&gt;<br>
+                &nbsp;&lt;dt&gt;due&lt;/dt&gt;<br>
+                &nbsp;&lt;dd&gt;il primo numero pari... perchè lo zero non ci piace&lt;/dd&gt;<br>
+                &lt;/dl&gt;
+                </p>
+            </td>
+            <td>
+                <dl>
+                    <dt>uno</dt>
+                    <dd>il primo numero naturale</dd>
+                    <dt>due</dt>
+                    <dd>il primo numero pari... perché lo zero non ci piace</dd>
+                </dl>
+            </td> 
+        </tr>
+    </table>
+</body>
+
+</html>

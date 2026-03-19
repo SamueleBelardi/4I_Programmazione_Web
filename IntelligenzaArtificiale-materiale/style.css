@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+main {
+    margin: 2em;
+}
+
+/* Header Principale */
+header {
+    background-color: darkblue; 
+    color: white;
+    padding: 15px 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.title img {
+    height: 150px;
+    margin-right: 3em;
+}
+
+/* Link Treccani */
+#link {
+    text-align: right;
+    margin-bottom: 2em;
+}
+
+#link a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Primo Sottotitolo h2 */
+.subtitle {
+    background-color: #0000FF; 
+    color: white;
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+    padding: 10px;
+    margin: 1.5em 0;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* Tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3em;
+}
+
+th, td {
+    border: 1px solid blue;
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+th {
+    background-color: skyblue;
+}
+
+td em {
+    color: blue;
+    font-style: normal;
+}
+
+/* Sezioni con articoli */
+
+.contenitore-sezione {
+    display: flex;
+    gap: 30px;
+    align-items: stretch; 
+}
+
+.testo-lista {
+    flex: 3; 
+}
+
+.subtitle-articolo {
+    background-color: #0000FF; 
+    color: white;
+    margin: 1.5em 0;
+}
+
+.subtitle-articolo h2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.6em;
+}
+
+.subtitle-articolo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.sidebar-gialla {
+    flex: 1; 
+    background-color: #FFFF99;
+    padding: 20px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+ul, ol {
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+strong {
+    font-weight: bold;
+}

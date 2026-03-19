@@ -1,0 +1,72 @@
+table {
+    border-collapse: collapse;
+
+}
+
+th {
+    border: solid blue 1px;
+    background-color: rgb(211, 211, 211);
+    padding: 0.25em;
+}
+
+td {
+    border: solid blue 1px;
+    padding: 0.25em;
+}
+
+h2 {
+    color: green;
+    clear: both;
+    border-bottom: solid green 1px;
+}
+
+#div1{
+    background-color: yellow;
+    border-left: dotted red;
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+    margin: 2em;
+}
+
+.sinistra {
+    float: left;
+    border: solid green 2px;
+    margin-right: 0.5em;
+    margin-bottom: 0.25em;
+    height: 100px;
+}
+em{
+    color: red;
+    font-style: normal;
+}
+.destra {
+    float: right;
+    border: solid black 2px;
+    background-color: rgb(168,218,229);
+    margin-left: 1em;
+    margin-bottom: 1em;
+    height: 130px;
+    padding: 0.5em;
+    clear: both;
+}
+body{
+    font-family: sans-serif;
+}
+#para1{
+    font-family: serif;
+    font-style: italic;
+}
+.sinistra2 {
+    float: left;
+    border: solid green 2px;
+    margin-right: 0.5em;
+    margin-bottom: 0.25em;
+    height: 150px;
+}
+#para2{
+    color: black;
+    background-color: yellow;
+    border-bottom: red solid 2px;
+}

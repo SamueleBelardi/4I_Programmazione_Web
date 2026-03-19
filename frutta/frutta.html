@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frutta</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: dotted black 1px;
+            padding: 0.5em;
+        }
+        th{
+            border: dotted black 1px;
+            background-color: rgb(68, 68, 68);
+            color: white;
+            padding: 0.8em;
+        }
+        #tabella2{
+            border-collapse: collapse;
+            background-color: yellow;
+        }
+        #td2{
+            border: solid green 2px;
+        }
+        #td3{
+            background-color: green;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frutta!</h1>
+    <h2 style="border-bottom: green solid;">Frutta secca</h2>
+    <table>
+        <tr>
+            <th>Frutta secca</th>
+            <th>Origine</th>
+            <th>Benefici</th>
+            <th>Prezzo al Kg(euro)</th>
+        </tr>
+        <tr >
+            <td>Mandorle</td>
+            <td>italia</td>
+            <td>Ricche di grassi sani, vitamina E e antiossidanti</td>
+            <td>12.50</td>
+        </tr>
+        <tr >
+            <td>Noci</td>
+            <td>USA</td>
+            <td>Ricche di omega-3 e antiossidanti</td>
+            <td>15.80</td>
+        </tr>
+        <tr>
+            <td>Noccoline</td>
+            <td>Turchia</td>
+            <td>Ricche di fibre,vitamine e minerali</td>
+            <td>9.75</td>
+        </tr>
+        <tr>
+            <td>Pistacchi</td>
+            <td>Iran</td>
+            <td>Ricche di proteine,fibre e grassi sani</td>
+            <td>18.20</td>
+        </tr>
+    </table>
+    <h2 style="border-bottom: green solid;">Frutti tropicali</h2>
+    <table id="tabella2">
+        <tr>
+            <td rowspan="2" id="td2">Ananas(Ananas comosus(L.)Merr) è un genere di piante appartenente alla famiglia Bomeliaceae</td>
+            <td id="td2" colspan="2">Il mango(Mangifera indica L.) è una pianta arborea, angiosperma dicotiledone, appartenente alla famiglia della Anacardiacee</td>
+        </tr>
+        <tr>
+            <td id="td3">La banana è la bacca della pianta del banano</td>
+            <td id="td2" rowspan="2">L'avocado (Persea americana Mill.) è una specie arborea da frutto che appartiene alla famiglia delle Lauracee.</td>
+        </tr>
+        <tr>
+            <td id="td2" colspan="2">La papaia o papaya (Carica papaya L.) è una pianta della famiglia delle Caricacee.</td>
+        </tr>
+    </table>
+</body>
+</html>
