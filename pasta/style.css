@@ -1,0 +1,11 @@
+header {
+    background-color: red;
+}
+h1 {
+    color: white;
+}
+section {
+    background-color: lightgray;
+    padding: 1em;
+    margin: 1em;
+}
