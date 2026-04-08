@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Samuele Belardi</title>
+    <style>
+        body {
+            margin: 0em;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 92% auto;
+            grid-template-rows: 30% 1fr auto;
+            grid-template-areas:
+                "header iis"
+                "main aside"
+                "footer aside";
+        }
+
+        /* header */
+
+        header {
+            grid-area: header;
+            background-color: green;
+        }
+
+        h1 {
+            text-align: center;
+            vertical-align: top;
+            font-size: 4em;
+        }
+
+        /* iis */
+
+        .iis {
+            grid-area: iis;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .iis img {
+            height: 6em;
+            width: auto;
+        }
+
+        /* main */
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        section {
+            margin: 1em;
+        }
+
+        h3 {
+            border-bottom: 3px dotted orange;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 0.2em;
+            border: 1px solid black;
+        }
+
+        th,
+        td:hover {
+            background-color: gray;
+            color: yellow;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        /* aside */
+
+        aside {
+            grid-area: aside;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lista-url {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            margin-left: 1em;
+        }
+
+        .lista-url a {
+            color: blue;
+            border-left: 4px solid yellow;
+            margin-bottom: 2em;
+            padding-left: 0.2em;
+        }
+
+        .lista-url a:hover {
+            border-left: 10px solid yellow;
+        }
+
+        /* footer */
+
+        footer {
+            grid-area: footer;
+            background-color: black;
+            padding-left: 1em;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        /**/
+
+        .corsivo-pizza {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .corsivo-brace {
+            color: green;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .scompare {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Verifica di Informatica
+        </h1>
+    </header>
+
+    <div class="iis">
+        <img src="img/iis.png" alt="iis">
+    </div>
+
+    <main>
+        <section>
+            <h2>Pizza</h2>
+            <h3>Dati</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>pomodoro</th>
+                    <th>alici</th>
+                </tr>
+                <tr>
+                    <th>Focaccia <em class="corsivo-pizza">genovese</em></th>
+                    <td>no</td>
+                    <td>si</td>
+                </tr>
+                <tr>
+                    <th>Margherita</th>
+                    <td>si</td>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>Napoletana</th>
+                    <td colspan="2">si</td>
+                </tr>
+            </table>
+
+            <h3>In sintesi</h3>
+            <p>Cosa serve per fare una roba <em class="corsivo-pizza">tipo</em> pizza</p>
+
+            <ul>
+                <li>farina</li>
+                <li>lievito</li>
+                <li>acqua</li>
+            </ul>
+
+
+            <div class="scompare">
+                <h3>Descrizione</h3>
+                <p>Questa frase è qui soltanto come riempimento, non ha senso partcolare</p>
+                <p>Questa frase è qui soltanto come riempimento, non ha senso partcolare</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Brace</h2>
+            <h3>Dati</h3>
+
+            <table border="1">
+                <tr>
+                    <th></th>
+                    <th>vegano</th>
+                    <th>maiale</th>
+                </tr>
+                <tr>
+                    <th>patate</th>
+                    <td>si</td>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>fiorentina</th>
+                    <td rowspan="2">no</td>
+                    <td>si</td>
+                </tr>
+                <tr>
+                    <th>costarelle</th>
+                    <td>si</td>
+                </tr>
+            </table>
+
+
+            <h3>In sintesi</h3>
+            <p>Cosa serve per fare una <em class="corsivo-brace">grigiata</em></p>
+
+            <ol>
+                <li>uno spazio adeguato</li>
+                <li>legna e <em class="corsivo-brace">cenere</em> a sufficenza</li>
+            </ol>
+
+
+            <div class="scompare">
+                <h3>Descrizione</h3>
+                <p>Questa frase è qui soltanto come riempimento, non ha senso partcolare</p>
+                <p>Questa frase è qui soltanto come riempimento, non ha senso partcolare</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <aside>
+        <div class="lista-url">
+            <a href="http://www.wikipedia.org">link uno</a>
+            <a href="http://www.wikipedia.org">link due</a>
+            <a href="http://www.wikipedia.org">link tre</a>
+        </div>
+
+    </aside>
+
+    <footer>
+        <p>Questo confronto tra la pizza e la bracie non è particoralmente utile.</p>
+        <p>il testo va pero ricopiato tutto</p>
+    </footer>
+</body>
+
+</html>
