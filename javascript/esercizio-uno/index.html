@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 20px;
+    }
+
+    table, td {
+        border: 1px solid black;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+</head>
+
+<body>
+    <table>
+        <script>
+            for (let i = 1; i <= 10; i++) {
+                document.write('<tr">');
+                for (let z = 1; z <= 10; z++) {
+                    document.write(`<td>${i * z}</td>`);
+                }
+                document.write('</tr>');
+            }
+        </script>
+    </table>
+</body>
+
+</html>
