@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi Rimuovi</title>
+    <style>
+        span {
+            padding: 1em;
+            background-color: orange;
+            border-radius: 0.5em;
+            border: solid 2px red;
+        }
+        div p{
+            border:solid 2px green;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <p><span onclick="aggiungi()">aggiungi</span>
+        <span onclick="rimuovi()">rimuovi</span>
+    </p>
+
+    <div id="lista"></div>
+    <script>
+        "use strict";
+        let colori = ["rosso", "giallo", "verde", "blu"];
+
+        function aggiungi() {
+            let n = document.getElementById("lista");
+            let random = Math.random();
+            random = Math.floor(random * colori.length);
+            let nuovo = document.createElement("p");
+            nuovo.innerText = colori[random];
+            n.appendChild(nuovo);
+        }
+
+        function rimuovi(){
+            /*let primo = document.querySelector("div p");
+            primo.remove();*/
+            let paragrafi= document.querySelectorAll("div p");
+            let ultimo=paragrafi[paragrafi.length-1];
+            ultimo.remove();
+        }
+    </script>
+</body>
+
+</html>
