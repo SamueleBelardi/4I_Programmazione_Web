@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+OBBIETTIVO: usare classList per modificare le classi di un elemento
+	invece di cambiare element.style proprietà per proprietà
+
+- al click su "evidenzia" aggiunge la classe "evidenziato" al paragrafo
+- al click su "normale" rimuove la classe "evidenziato"
+- al click su "alterna bordo" aggiunge o rimuove la classe "bordo" ad ogni click
+
+!! creare più paragrafi e far sì che solo quello cliccato diventi "attivo",
+   rimuovendo "attivo" dagli altri (usa querySelectorAll + forEach)
+-->
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>classList</title>
+    <style>
+        * {
+            font-family: sans-serif
+        }
+
+        nav span {
+            display: inline-block;
+            border: 2px solid orange;
+            background-color: yellow;
+            border-radius: 0.25em;
+            padding: 0.5em;
+            margin: 0.25em;
+        }
+
+        #testo {
+            margin-top: 1em;
+            padding: 0.75em;
+        }
+
+        .evidenziato {
+            background-color: yellow;
+        }
+
+        .bordo {
+            border: 2px solid red;
+        }
+
+        .attivo {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span onclick="aggiungi()">evidenzia</span>
+        <span onclick="rimuovi()">normale</span>
+        <span onclick="alterna()">alterna bordo</span>
+    </nav>
+    <p id="testo">Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    <p>Questo paragrafo cambia aspetto tramite le classi CSS.</p>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

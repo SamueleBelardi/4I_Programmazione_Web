@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #plancia > span {
+            background-color: greenyellow;
+            border: 2px solid green;
+            padding: 2em;
+            margin: 0.2em;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .colorato {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body onload="creaPagina()"> <!-- ← rimosso onkeydown, gestito in JS -->
+    <section id="punti"></section>
+    <section id="plancia"></section>
+    <script src="script.js"></script> <!-- ← spostato in fondo al body -->
+</body>
+</html>

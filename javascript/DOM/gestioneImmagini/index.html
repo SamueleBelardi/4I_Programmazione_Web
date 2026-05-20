@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 32px);
+            grid-template-rows: repeat(10, 32px);
+        }
+
+        div {
+            height: 32px;
+            width: 32px;
+            background: url(mattonelle.png);
+        }
+
+        .prato1 {
+            background-position: -66px 0px;
+        }
+
+        .bordo-destra-alto {
+            background-position: -165px 0px;
+        }
+
+        .fiore-giallo {
+            background-position: -99px -66px;
+        }
+
+        .polvere {
+            background-position: -165px -66px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="polvere"></div>
+    <div class="polvere"></div>
+    <div class="fiore-giallo"></div>
+    <div class="prato1"></div>
+    <div class="prato1"></div>
+    <div class="bordo-destra-alto"></div>
+</body>
+
+</html>

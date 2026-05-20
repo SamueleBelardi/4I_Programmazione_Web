@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <script>
+        "use strict";
+        
+        function start(){
+            let audio = document.getElementById("Cespuglio");
+            audio.play();
+        }
+        function reset(){
+            let audio = document.getElementById("Cespuglio");
+            audio.pause();
+            audio.currentTime=0;
+        }
+    </script>
+</head>
+<body>
+    <p onclick="start()">start</p>
+    <p onclick="reset()">reset</p>
+    <audio src="Grax - Sono Solo Un Cespuglio (Fortnite Music Video).mp3" controls id="Cespuglio"></audio>
+</body>
+</html>

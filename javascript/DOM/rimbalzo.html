@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rimbalzo</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            position:fixed;
+            margin: 0;
+            font-size: 2em;
+            height: 100px;
+            width: 200px;
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        "use strict";
+        let variazione=3;
+        let timerSposta = setInterval(cambiaPos,1)
+
+        function cambiaPos(){
+            let div = document.getElementById("div");
+            let posAttuale=parseInt(div.style.left);
+
+            if (posAttuale>window.innerWidth-200){
+                //sono uscito a destra
+                variazione = -variazione;
+
+            }
+            if(posAttuale<0){
+                //sono uscito a sinistra
+                variazione = -variazione;
+
+            }
+            posAttuale=posAttuale+variazione
+            div.style.left=posAttuale+"px"
+        }
+    </script>
+</head>
+<body>
+    <div id="div" style="left:0">100x50</div>
+</body>
+</html>
